@@ -1,0 +1,63 @@
+/* Basic reset for clean styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Container styling as requested: centered horizontally with top margin */
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto 0; /* Top margin for spacing, auto for horizontal centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Color box styling with fixed width and height and a default color */
+#color-box {
+    width: 200px;
+    height: 200px;
+    background-color: #cccccc; /* Default background color */
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 3px solid #eee;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Visually appealing and easily clickable button */
+#change-color-btn {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#change-color-btn:hover {
+    background-color: #0056b3;
+}
+
+#change-color-btn:active {
+    transform: scale(0.96); /* Slight click/press effect */
+}
