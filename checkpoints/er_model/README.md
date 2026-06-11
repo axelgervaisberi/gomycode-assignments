@@ -8,10 +8,15 @@ The following ER diagram was created using [Mermaid](https://mermaid.js.org/).
 
 ```mermaid
 erDiagram
+
     GYMNASIUM ||--o{ MEMBER : registers
     GYMNASIUM ||--o{ SESSION : offers
-    MEMBER }o--o{ SESSION : attends
-    COACH }o--o{ SESSION : leads
+
+    MEMBER ||--o{ REGISTRATION : has
+    SESSION ||--o{ REGISTRATION : contains
+
+    COACH ||--o{ COACH_SESSION : assigned_to
+    SESSION ||--o{ COACH_SESSION : led_by
 
     GYMNASIUM {
         int gym_id PK
@@ -34,7 +39,7 @@ erDiagram
         int session_id PK
         string sport_type
         string schedule
-        int max_members "20"
+        int max_members
         int gym_id FK
     }
 
@@ -47,12 +52,14 @@ erDiagram
     }
 
     REGISTRATION {
+        int registration_id PK
         int member_id FK
         int session_id FK
         date registration_date
     }
 
     COACH_SESSION {
+        int coach_session_id PK
         int coach_id FK
         int session_id FK
     }
