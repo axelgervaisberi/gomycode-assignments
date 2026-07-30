@@ -1,0 +1,24 @@
+.App {
+  background: linear-gradient(135deg, #eef2f3 0%, #8e9eab 100%);
+}
+
+.profile-card {
+  animation: fadeIn 0.4s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
