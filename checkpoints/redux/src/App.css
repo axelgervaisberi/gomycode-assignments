@@ -1,0 +1,13 @@
+.App {
+  background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+  min-height: 100vh;
+}
+
+.task-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
