@@ -1,0 +1,21 @@
+{
+  "name": "lms_core_components_js",
+  "version": "1.0.0",
+  "description": "Library Management System Core Components using ES Modules, Design Patterns, Abstractions, and Dependency Injection",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "es-modules",
+    "design-patterns",
+    "factory",
+    "strategy",
+    "observer",
+    "dependency-injection"
+  ],
+  "author": "",
+  "license": "ISC"
+}
