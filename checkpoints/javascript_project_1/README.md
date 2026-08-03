@@ -7,4 +7,4 @@ As part of the checkpoint requirements, I have focused on solving a mix of Mediu
 ## My Edabit Profile
 
 You can view my full profile, completed challenges, and collected points here:
-👉 **[My Edabit Profile](https://edabit.com/user/XJBqC7R38RkTmpEgZ)**
+* **[My Edabit Profile](https://edabit.com/user/XJBqC7R38RkTmpEgZ)**

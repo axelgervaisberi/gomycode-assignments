@@ -2,7 +2,7 @@
 
 An Object-Oriented Library Management System built with JavaScript (Node.js) applying solid OOD principles, encapsulation, polymorphism, inheritance, and software design patterns.
 
-## 🏗️ Design Patterns Applied
+## Design Patterns Applied
 
 ### 1. Singleton Pattern (`LibrarySystem`)
 - **Class**: `LibrarySystem` ([services/LibrarySystem.js](file:///c:/Users/aberi/Documents/perso/GoMyCode/checkpoints/smart_library_management_system/services/LibrarySystem.js))
@@ -18,7 +18,7 @@ An Object-Oriented Library Management System built with JavaScript (Node.js) app
 
 ---
 
-## 📁 System Architecture
+## System Architecture
 
 ```
 smart_library_management_system/
@@ -38,7 +38,7 @@ smart_library_management_system/
 
 ---
 
-## 🚀 Execution & Verification
+## Execution & Verification
 
 ### 1. Run Unit Tests
 ```bash

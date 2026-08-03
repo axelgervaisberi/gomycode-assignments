@@ -5,7 +5,7 @@ This report documents the systematic inspection, diagnosis, and resolution of st
 
 ---
 
-## 🛠️ Debugging Environment & Tooling
+## Debugging Environment & Tooling
 - **Tool Used**: React Developer Tools (Chrome / Firefox Extension & Standalone App).
 - **Inspected Tabs**:
   - **Components Tab**: Used to inspect live component hierarchy, state hooks (`useState`), props objects, and render triggers.
@@ -13,17 +13,17 @@ This report documents the systematic inspection, diagnosis, and resolution of st
 
 ---
 
-## 🐛 Diagnosed Issues & Technical Solutions
+## Diagnosed Issues & Technical Solutions
 
 ### Issue 1: Stale State Closures & Rapid Update Batching (`Counter.js`)
 
-#### 🔍 React DevTools Inspection
+#### React DevTools Inspection
 When inspecting `Counter` in the **Components Tab**:
 - Rapidly clicking the `+3 (Batch Test)` button triggered 3 consecutive state updates.
 - In the initial code, state showed `State: 1` instead of `State: 3` after clicking.
 - **Root Cause**: Updates relied on stale closures (`setCount(count + 1)`), evaluating `count` against the stale state value of the current render cycle.
 
-#### 🔧 Fix Applied
+#### Fix Applied
 Replaced direct value updates with functional state updates:
 ```javascript
 // BEFORE (Buggy Stale Closure):
@@ -45,13 +45,13 @@ const handleIncrementByThree = () => {
 
 ### Issue 2: Missing Props & Undefined Property Access Crashes (`UserProfile.js`)
 
-#### 🔍 React DevTools Inspection
+#### React DevTools Inspection
 In the **Components Tab**:
 - Inspecting `UserProfile` when parent components passed `undefined` props revealed runtime exceptions: `TypeError: Cannot read properties of undefined (reading 'name')`.
 - Props panel displayed `props: {}` or `props: { user: undefined }`.
 - **Root Cause**: Absence of default prop fallbacks and optional chaining.
 
-#### 🔧 Fix Applied
+#### Fix Applied
 Implemented default parameter fallbacks and optional chaining:
 ```javascript
 // BEFORE (Buggy Property Access):
@@ -75,14 +75,14 @@ const UserProfile = ({ user = { name: 'Guest Developer', email: 'guest@example.c
 
 ### Issue 3: Array Direct State Mutation & Missing Unique Keys (`ItemList.js`)
 
-#### 🔍 React DevTools Inspection
+#### React DevTools Inspection
 In the **Components & Profiler Tabs**:
 - Array items were pushed directly into state (`items.push(newItem)` or `items[i].completed = true`).
 - In React DevTools **Components Tab**, the internal array state reflected new items, but the UI failed to re-render.
 - When deleting an item, using `key={index}` caused React DOM reconciliation to mismatch input states across list items.
 - **Root Cause**: Direct state mutation bypassed React's object identity change check, and index keys caused DOM reconciliation glitches.
 
-#### 🔧 Fix Applied
+#### Fix Applied
 Implemented immutable array updates (`[...items]`, `.map()`, `.filter()`) and assigned unique `id` key props:
 ```javascript
 // BEFORE (Buggy Direct Mutation & Index Key):
@@ -107,7 +107,7 @@ const handleAddItem = (title) => {
 
 ---
 
-## 📊 Verification & Empirical Proof
+## Verification & Empirical Proof
 1. **Components Inspection**: Every state hook and prop object cleanly updates in React DevTools.
 2. **Profiler Recording**: Render profiling confirms zero unnecessary re-renders and clean DOM reconciliation on list item updates.
 3. **Build Check**: `npm run build` compiled with 0 errors.

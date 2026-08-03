@@ -7,4 +7,4 @@ As part of the checkpoint requirements, I have focused on gathering over 300 poi
 ## My CodeWars Profile
 
 You can view my full profile, completed challenges, and collected points here:
-👉 **[My CodeWars Profile](https://www.codewars.com/users/axelgervaisberi)**
+* **[My CodeWars Profile](https://www.codewars.com/users/axelgervaisberi)**

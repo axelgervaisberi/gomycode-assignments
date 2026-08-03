@@ -4,7 +4,7 @@ This repository contains the conversion of React JavaScript components to TypeSc
 
 ---
 
-## 📝 Step-by-Step Conversion Descriptions
+## Step-by-Step Conversion Descriptions
 
 ### Code 01: Functional Component (`Greeting.tsx`)
 
@@ -64,7 +64,7 @@ export default Counter;
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 1. Install dependencies:
    ```bash
