@@ -1,0 +1,20 @@
+{
+  "name": "smart_library_management_system",
+  "version": "1.0.0",
+  "description": "Smart Library Management System implementing Object-Oriented Design and Design Patterns (Singleton, Factory, Observer)",
+  "main": "demo.js",
+  "scripts": {
+    "start": "node demo.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "ood",
+    "design-patterns",
+    "singleton",
+    "factory",
+    "observer",
+    "library-system"
+  ],
+  "author": "",
+  "license": "ISC"
+}
