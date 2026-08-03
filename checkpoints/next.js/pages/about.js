@@ -58,7 +58,7 @@ export default function About() {
       <div className="mb-5 text-center">
         <h1 className="display-5 fw-bold text-white mb-2">About Me</h1>
         <p className="lead text-muted">
-          Zokouehi Axel Gervais BERI | Abidjan, Côte d'Ivoire | +225 07 78 92 99 03
+          Zokouehi Axel Gervais BERI | gervaisberi@proton.me | +225 07 78 92 99 03 | Abidjan, Côte d'Ivoire
         </p>
       </div>
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container, Row, Col, Card, Form, Button, Alert } from 'react-bootstrap';
-import { FaPhone, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
+import { FaPhone, FaMapMarkerAlt, FaPaperPlane, FaEnvelope } from 'react-icons/fa';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
@@ -28,6 +28,18 @@ export default function Contact() {
             <Card.Body className="d-flex flex-column justify-content-between">
               <div>
                 <h3 className="h4 fw-bold text-info mb-4">Contact Details</h3>
+
+                <div className="mb-4 d-flex align-items-center gap-3">
+                  <div className="bg-primary bg-opacity-25 p-3 rounded-circle text-info fs-4">
+                    <FaEnvelope />
+                  </div>
+                  <div>
+                    <h6 className="text-muted mb-0 small">Email Address</h6>
+                    <a href="mailto:gervaisberi@proton.me" className="fw-bold fs-6 text-white text-decoration-none hover-info">
+                      gervaisberi@proton.me
+                    </a>
+                  </div>
+                </div>
 
                 <div className="mb-4 d-flex align-items-center gap-3">
                   <div className="bg-primary bg-opacity-25 p-3 rounded-circle text-info fs-4">

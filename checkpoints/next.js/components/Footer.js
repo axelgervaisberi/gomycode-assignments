@@ -16,6 +16,9 @@ const Footer = () => {
           <Col md={6} className="d-flex flex-column align-items-md-end">
             <h5 className="fw-bold text-white mb-3">Contact & Location</h5>
             <p className="text-white mb-2 d-flex align-items-center gap-2 fs-6">
+              <FaEnvelope className="text-info" /> gervaisberi@proton.me
+            </p>
+            <p className="text-white mb-2 d-flex align-items-center gap-2 fs-6">
               <FaPhone className="text-info" /> +225 07 78 92 99 03
             </p>
             <p className="text-white mb-3 d-flex align-items-center gap-2 fs-6">
@@ -35,7 +38,7 @@ const Footer = () => {
             <a href="https://github.com/axelgervaisberi" target="_blank" rel="noopener noreferrer" className="text-light text-hover-info">
               <FaGithub />
             </a>
-            <a href="mailto:axel.beri@example.com" className="text-light text-hover-info">
+            <a href="mailto:gervaisberi@proton.me" className="text-light text-hover-info" title="Send Email">
               <FaEnvelope />
             </a>
           </div>
