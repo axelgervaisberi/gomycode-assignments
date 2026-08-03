@@ -1,0 +1,19 @@
+{
+  "name": "library_management_system",
+  "version": "1.0.0",
+  "description": "Library Management System featuring Object-Oriented Analysis (OOA), 3-Tier Architectural Modeling, and UML Diagrams",
+  "main": "demo.js",
+  "scripts": {
+    "start": "node demo.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "ooa",
+    "uml",
+    "architecture",
+    "library-management-system",
+    "3-tier"
+  ],
+  "author": "",
+  "license": "ISC"
+}
